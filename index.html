@@ -2,76 +2,118 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!--Make mobile friendly-->
-        <!--Decide on a Name-->
-        <title>Mo. County Dataset</title>
-        <meta charset="uft-8">
+        <title>MO County, MD Traffic Stops</title>
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     </head>
-        <!--Maybe fixed header?-->
-        <header>
-        </header>
-        <nav>
-            <b>
-                <a href="index.html">Home</a>
-                <a href="about.html">About Montgomery County</a>
-                <a href="bibliography.html">Bibliography</a>
-                <a href="https://data.montgomerycountymd.gov/Public-Safety/Traffic-Violations/4mse-ku6q"target="_blank">Dataset</a> &nbsp;
-            </b>
-        </nav>
-        <!--Add indents-->
-        <!--Add links on left or right to navigate to top, Findings, Conclusion, etc?-->
-        <p>
-            <h1>Montgomery County, MD Traffic Stops</h1>
+    <body>
+       <div class="row">
+            <div class="col-4">
+                <header>
+                    <h1>Montgomery County, MD Traffic Stops</h1>
+                </header>
+            </div>
+            <div class="col-8">
+                <nav>
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html">About Montgomery County</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="bibliography.html">Bibliography</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://data.montgomerycountymd.gov/Public-Safety/Traffic-Violations/4mse-ku6q"target="_blank">Dataset (opens new tab)</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="sidenav">
+            <a href="#Top">Top of Page</a>
+            <a href="#Introduction">Introduction</a>
+            <a href="#Data Critique">Data Critique</a>
+            <a href="#Findings">Findings</a>
+            <a href="#Conclusion">Conclusion</a>
+            <a href="#Visualisations">Visualisations</a>
+        </div>
+
+        <main>
+            <p class="text-center"><i>images below will be side by side</i></p>
+            <img src="images/img6.png" class="mx-auto" style="display:block; width:50%; height:auto;" alt="img-6">
+            
+            <h2 id="Introduction">Introduction</h2>
             <p>
-                Montgomery County, Maryland, named after general Richard Montgomery, is the largest county in Maryland, located adjacent to the nation's capital.  Following the death of George Floyd and the Black Lives Matter protests in March of 2020, Montgomery County law enforcement promised changes would be made to end police discrimination in the county.  Using an open government data set on traffic stops in Montgomery County, we investigate whether these changes have been implemented.  The data set provides information about the demographics of the person stopped, information about the stops such as why they were stopped, when they were stopped, where they were stopped, etc., and information about the outcome of the stop such as if they were let off with a warning, if they received a ticket, if a search was conducted, and if they were arrested.  We sorted this data by race and grouped it together in different categories, then split it up by before and after March 2020.  By comparing pre and post March 2020 visualizations, we were able to uncover whether Montgomery County Law Enforcement stayed true to their promise toward decreasing police discrimination.
+                &emsp;&emsp;  
+                Montgomery County, Maryland, named after general Richard Montgomery, is the largest county in Maryland, located adjacent to the nation's capital. Following the death of George Floyd and the Black Lives Matter protests in March of 2020, Montgomery County law enforcement promised changes would be made to end police discrimination in the county. Using an open government data set on traffic stops in Montgomery County, we investigate whether these changes have been implemented. The data set provides information about the demographics of the person stopped, information about the stops such as why they were stopped, when they were stopped, where they were stopped, etc., and information about the outcome of the stop such as if they were let off with a warning, if they received a ticket, if a search was conducted, and if they were arrested. We sorted this data by race and grouped it together in different categories, then split it up by before and after March 2020. By comparing pre and post March 2020 visualizations, we were able to uncover whether Montgomery County Law Enforcement stayed true to their promise toward decreasing police discrimination.
                 <br>
-                At the beginning of our research, based on  systematic police trends, we were able to assume that race and ethnicity impact how frequently individuals get stopped and the outcome of a stop (getting searched, arrested, ticketed etc.).  When exploring literature covering the influence of race and ethnicity on traffic violations and outcomes, we found an overwhelming response that supported our primary assumption.  Kelsey Shoub, political science professor at the University of South Carolina analyzed 20 million traffic stops across the US to uncover police discrimination of people of color.  The results were significant.  A few conclusions drawn from the analysis were that Blacks were 63% more likely to be stopped despite spending 16% less time on the road, and 95% more likely to be stopped when time on the road was accounted for.  Additionally, Blacks were 115% more likely to be searched, despite statistics showing that contraband was more likely to be found in vehicles of whites (Horn, 2022).  The literature also examined additional factors, such age and location, that influence the frequency and outcomes of traffic stops of people of color.  For instance, the article The Impact of Drivers’ Race, Gender, and Age During Traffic Stops found that warnings and citations were disproportionately issued to young, Black, male drivers (Tillyer & Engel, 2010).  Moreover, the article Policing Race: The Racial Stratification of Searches in Police Traffic Stops shows that searches are more likely in stops of Black drivers than in those of White drivers, especially by White officers (ROJEK et al., 2012).  In addition to that we also gained a better understanding on how racial profiling goes on to effect people throughout their lives. As revealed in the article Traffic Stops, Race, and Perceptions of Fairness, citizens stopped for traffic violations, especially those who perceived unfair treatment, are significantly less likely to seek help from the police and/or report non-crime and emergency situations (Chenane et al., 2019).  The information presented confirmed the assumed unconstitutional racial biases within traffic stops in the United States.
+                &emsp;&emsp;  
+                At the beginning of our research, based on systematic police trends, we were able to assume that race and ethnicity impact how frequently individuals get stopped and the outcome of a stop (getting searched, arrested, ticketed etc.). When exploring literature covering the influence of race and ethnicity on traffic violations and outcomes, we found an overwhelming evidence that supported our primary assumption. Kelsey Shoub, political science professor at the University of South Carolina analyzed 20 million traffic stops across the US to uncover police discrimination of people of color. The results were significant. A few conclusions drawn from the analysis were that Blacks were 63% more likely to be stopped despite spending 16% less time on the road, and 95% more likely to be stopped when time on the road was accounted for. Additionally, Blacks were 115% more likely to be searched, despite statistics showing that contraband was more likely to be found in vehicles of whites (Horn, 2022). The literature also examined additional factors, such as age and location, that influence the frequency and outcomes of traffic stops of people of color. For instance, the article The Impact of Drivers’ Race, Gender, and Age During Traffic Stops found that warnings and citations were disproportionately issued to young, Black, male drivers (Tillyer & Engel, 2010). Moreover, the article Policing Race: The Racial Stratification of Searches in Police Traffic Stops shows that searches are more likely in stops of Black drivers than in those of White drivers, especially by White officers (ROJEK et al., 2012). In addition to that we also gained a better understanding on how racial profiling goes on to effect people throughout their lives. As revealed in the article Traffic Stops, Race, and Perceptions of Fairness, citizens stopped for traffic violations, especially those who perceived unfair treatment, are significantly less likely to seek help from the police and/or report non-crime and emergency situations (Chenane et al., 2019). The information presented confirmed the assumed unconstitutional racial biases within traffic stops in the United States.
                 <br>
-                We also investigated the impact of the intersection of race and gender within traffic stops due to the assumption that females are stopped less and receive less harsh treatment.  A study done by the Prison Policy Initiative used data from the FBI Uniform Crime Reporting Program to investigate gender and racial disparities in both traffic and street stops.  The stops analyzed included arrests, searches, and use of force.  The study discovered surprising trends, such as the amount of female arrests and use of force towards females has increased significantly since 1999, both race and gender affect the outcome of traffic stops, race is a more prevalent factor in street stops for men whereas race is a more prevalent factor in female arrests during a stop, black and latino men experience the most use of force, and black women experience similar rates of force use as white men (Initiative, 2022).  When exploring the topic of gender within traffic further, we found that some of the articles contradict each other. For example, in the article Gender bias in power relationships: evidence from police traffic stops it states that there is no true gender bias but rather the regional location has more of an impact on the likelihood of citations (Blalock et al., 2007).  In comparison to that, the article Gender Bias in the Enforcement of Traffic Laws: Evidence based on a new empirical test explains that men make up the majority of individuals getting tickets (64%) within the US (Rowe, 2008).  We will be including a race/gender analysis on top of our original findings regarding race to explore this topic further.
+                &emsp;&emsp;  
+                We also investigated the impact of the intersection of race and gender within traffic stops due to the assumption that females are stopped less and receive less harsh treatment. A study done by the Prison Policy Initiative used data from the FBI Uniform Crime Reporting Program to investigate gender and racial disparities in both traffic and street stops. The stops analyzed included arrests, searches, and use of force. The study discovered surprising trends, such as the amount of female arrests and use of force towards females has increased significantly since 1999, both race and gender affect the outcome of traffic stops, race is a more prevalent factor in street stops for men whereas race is a more prevalent factor in female arrests during a stop, black and latino men experience the most use of force, and black women experience similar rates of force use as white men (Initiative, 2022). When exploring the topic of gender within traffic further, we found that some of the articles contradict each other. For example, in the article Gender bias in power relationships: evidence from police traffic stops it states that there is no true gender bias but rather the regional location has more of an impact on the likelihood of citations (Blalock et al., 2007). In comparison to that, the article Gender Bias in the Enforcement of Traffic Laws: Evidence based on a new empirical test explains that men make up the majority of individuals getting tickets (64%) within the US (Rowe, 2008). We will be including a race/gender analysis on top of our original findings regarding race to explore this topic further.
                 <br>
-                Using Tableau, we analyze open government traffic stop data from Montgomery County, Maryland.  Racial disparities shown within Montgomery County police data suggest unconstitutional policing within the county.  A report from the Office of Legislative Oversight uncovered multiple significant statistics, such as that in 2018 Black residents of Montgomery County were subject to 32% of all traffic stops and 55% of cases that involved use of force by the officer, despite only making up 18% of the population (Iannelli, 2020).  Additionally, in 2019 statistics showed that black men were three times more likely, and latino men were twice as likely, to receive a traffic violation than white men (Iannelli, 2020).  On top of that, in March of 2021, body camera footage of a Montgomery County police officer shows an officer screaming at and threatening a five year old black boy  (Body Camera Footage Shows Montgomery County Police Officers Screaming At, Threatening A 5-Year-Old Black Boy, 2021).  Following the Black Lives Matter protests and the killing of George Flloyd in 2020, Montgomery County lawmakers and law enforcement promised change and equality,  such as a use-of-force law that demands officers report when they see colleagues using excessive force (Tan & Morse, 2021) and a more recent legislation that would require increased transparency of body-camera footage.  In addition, multiple bills were passed by the state of Maryland to increase accountability within police shootings and in complaints against officers.  But, has this promised change been implemented?  Using this data, we aim to uncover if any true change has been made to end law enforcement discrimination in Montgomery County, Maryland.
+                &emsp;&emsp;
+                Using Tableau, we analyze open government traffic stop data from Montgomery County, Maryland. Racial disparities shown within Montgomery County police data suggest unconstitutional policing within the county. A report from the Office of Legislative Oversight uncovered multiple significant statistics, such as that in 2018 Black residents of Montgomery County were subject to 32% of all traffic stops and 55% of cases that involved use of force by the officer, despite only making up 18% of the population (Iannelli, 2020). Additionally, in 2019 statistics showed that black men were three times more likely, and latino men were twice as likely, to receive a traffic violation than white men (Iannelli, 2020). On top of that, in March of 2021, body camera footage of a Montgomery County police officer shows an officer screaming at and threatening a five year old black boy (Body Camera Footage Shows Montgomery County Police Officers Screaming At, Threatening A 5-Year-Old Black Boy, 2021). Following the Black Lives Matter protests and the killing of George Flloyd in 2020, Montgomery County lawmakers and law enforcement promised change and equality, such as a use-of-force law that demands officers report when they see colleagues using excessive force (Tan & Morse, 2021) and a more recent legislation that would require increased transparency of body-camera footage. In addition, multiple bills were passed by the state of Maryland to increase accountability within police shootings and in complaints against officers. But, has this promised change been implemented? Using this data, we aim to uncover if any true change has been made to end law enforcement discrimination in Montgomery County, Maryland.
                 <br>
             </p>
-            <h2>Findings</h2>
+            <h2 id="Data Critique">Data Critique</h2>
             <p>
-                As anticipated, the data illustrates discriminatory practices within the Montgomery County Police Department.  At first glance, the percentages don't seem so significant, especially between the White and Black populations.  However, once you bring in the Montgomery County census data the issue becomes clear.  According to the census data reported, Whites make up 60% of the population, Blacks make up 20.1%, Latinos make up 20.1%, and Asians make up 15.6%.  According to our findings, from March 1st, 2019 through March 1st, 2020, Black people made up 34.11% of all stops despite only making up 20.1% of the population, whereas Whites made up 29.26% of stops and made up 60% of the population.  Similarly, Hispanics make up 25.71% of all stops, despite only making up  20.1% of the population.  The search percentages of Blacks also beat that of Whites, with 2.38% of stops of Black people searched, and White stops resulting in a search 1.14% of the time.  Lations also get the short end of the stick here, with 1.96% of all Latino stops resulting in searches.  As one might expect, data on searches and arrests show more Black and Latino arrests than white arrests by a significant amount, with 27% of searches on Black people resulting in an arrest, 29.1% of searches on Hispanics resulting in an arrest, and only 14.8% of searches on Whites resulting in an arrest.  The most common arrest reason for all people was “Stop”, which made up 16.9% of Black arrests, 23.2% of Hispanic arrests, and 9.4% of White arrests.  Coming in a close second for arrests on Black people was “Null”, representing 14.8% of arrests, versus only 5.5% for Hispanics, and 3.7% for Whites.  Little to no discrimination against Asians or Native Americans were observed.
-                <br>
-                The data supports the general societal assumption that women are stopped less than men.  Men made up 69.51% of all stops and represented 48.4% of Montgomery County’s population, whereas women only made up 30.49% of stops despite making up 51.6% of the population. When we considered the intersection of race and gender, we found that both male and female people of color were discriminated against by the police.  Mainly, Black males and females, and Hispanic males.  From March 1st, 2019 to through March 1st, 2020, Black males accounted for 23.59% of all stops and Black females 10.52%, whereas White males accounted for 18.87% of all stops, and females 10.39%.  Additionally, Hispanic males accounted for 19.94% of all stops and females 5.77%.
-                <br>
-                When comparing the data from March 1st, 2019 to through March 1st, 2020 and March 1st, 2020 through March 1st, 2021, there appears to have been very little progress made toward ending police discrimination in Montgomery County.  For example, overall stops of Black people decreased only 3.73%, and Hispanic stops actually increased 1.17%.  Searches conducted on Black people increased from 2.38% to 3.04%, and searches on Hispanics increased from 1.96% to 3.16%.  There was a 1.2% decrease in the amount of searches on Black people resulting in arrests, however, Hispanics saw a 3.3% increase in the same category.  A slight 3.1% decrease was noticed in the amount of Black “Null” arrests, but Hispanics once again suffered a slight increase in this area by 1.0%.  Given this information, it does not appear that any significant change has been made to reduce police discrimination.
-                <br>
+                &emsp;&emsp;  
+                The Traffic Violations Open Data Portal from Montgomery County, Mayland contains traffic violation information from all electronic traffic violations issued in the county from January 1st, 2012 to March 1st, 2022 (as of today). The data set is owned by MCG ESB Service and is updated daily. The data set is organized in a table with columns representing categories, and rows representing each recorded traffic violation. The categories are date, time, agency, sub-agency, description, location, latitude, longitude, accident, belts(seat belt on or off), injury, damage, fatal, alcohol, hazmat, search outcome, state, vehicle info, violation type, gender, race, etc. The data set is of high quality, well organized, and a reliable source of information, making it easy to understand and interpret. There are a lot of different categories to describe and analyze for each traffic stop, and the majority of this information is consistent across all the 1.77+ million recorded traffic stops. The design of the dataset makes it easily sortable too. Using Tableau, we plan on sorting the data first by race or gender, and then by other categories such as warnings, tickets, searches, arrests, etc. to search for trends in the discrimination of people of color and gender over the years. We created two visualizations for each combination of categories, one from pre 2020 and another from post 2020 to see if the laws that were implemented by Montgomery County to prevent discrimination were upheld by police officers. We can then take this information and visualize it within Tableau to further our analysis. The dataset includes everything we need to give a thoughtful analysis, however, it is missing information such as the age of the violator, and the age, race, and gender of the officer, that would help to deepen our analysis even further.
             </p>
-            <h2>Conclusion</h2>
+            
+            <h2 id="Findings">Findings</h2>
+            <div class="row">
+                <div class="col-7">
+                    <p>
+                        &emsp;&emsp;  
+                        As anticipated, the data illustrates discriminatory practices within the Montgomery County Police Department. At first glance, the percentages don't seem so significant, especially between the White and Black populations. However, once you bring in the Montgomery County census data the issue becomes clear. According to the census data reported, Whites make up 60% of the population, Blacks make up 20.1%, Latinos make up 20.1%, and Asians make up 15.6%. According to our findings, from March 1st, 2019 through March 1st, 2020, Black people made up 34.11% of all stops despite only making up 20.1% of the population, whereas Whites made up 29.26% of stops and made up 60% of the population. Similarly, Hispanics make up 25.71% of all stops, despite only making up 20.1% of the population. The search percentages of Blacks also beat that of Whites, with 2.38% of stops of Black people searched, and White stops resulting in a search 1.14% of the time. Lations also get the short end of the stick here, with 1.96% of all Latino stops resulting in searches. As one might expect, data on searches and arrests show more Black and Latino arrests than white arrests by a significant amount, with 27% of searches on Black people resulting in an arrest, 29.1% of searches on Hispanics resulting in an arrest, and only 14.8% of searches on Whites resulting in an arrest. The most common arrest reason for all people was “Stop”, which made up 16.9% of Black arrests, 23.2% of Hispanic arrests, and 9.4% of White arrests. Coming in a close second for arrests on Black people was “Null”, representing 14.8% of arrests, versus only 5.5% for Hispanics, and 3.7% for Whites. Little to no discrimination against Asians or Native Americans were observed.
+                        <br>
+                        &emsp;&emsp;  
+                        The data supports the general societal assumption that women are stopped less than men. Men made up 69.51% of all stops and represented 48.4% of Montgomery County’s population, whereas women only made up 30.49% of stops despite making up 51.6% of the population. When we considered the intersection of race and gender, we found that both male and female people of color were discriminated against by the police. Mainly, Black males and females, and Hispanic males. From March 1st, 2019 to through March 1st, 2020, Black males accounted for 23.59% of all stops and Black females 10.52%, whereas White males accounted for 18.87% of all stops, and white females 10.39%. Additionally, Hispanic males accounted for 19.94% of all stops and females 5.77%.
+                        <br>
+                        &emsp;&emsp;  
+                        When comparing the data from March 1st, 2019 to through March 1st, 2020 and March 1st, 2020 through March 1st, 2021, there appears to have been very little progress made toward ending police discrimination in Montgomery County. For example, overall stops of Black people decreased only 3.73%, and Hispanic stops actually increased 1.17%. Searches conducted on Black people increased from 2.38% to 3.04%, and searches on Hispanics increased from 1.96% to 3.16%. There was a 1.2% decrease in the amount of searches on Black people resulting in arrests, however, Hispanics saw a 3.3% increase in the same category. A slight 3.1% decrease was noticed in the amount of Black “Null” arrests, but Hispanics once again suffered a slight increase in this area by 1.0%. Given this information, it does not appear that any significant change has been made to reduce police discrimination.
+                        <br>
+                    </p>
+                </div>
+                <div class="col-5">
+                    <img src="images/img9.png" style="width:100%; height: auto;" alt="img-9">
+                    <img src="images/img10.png" style="width:100%; height: auto;" alt="img-10">
+                </div>
+            </div>
+            
+            <h2 id="Conclusion">Conclusion</h2>
             <p>
-                Despite implementing new laws and practices aimed at ending systemic racism in law enforcement, the Montgomery County Police has made little progress toward actually executing any kind of change.  As illustrated by the data, there was a slight decrease in the amount of stops of Blacks and Hispanics, but not a large enough percentage to represent true change during the time period.  Additionally, other categories, such as searches, increased for both the Black and Hispanic population.  This is disappointing to see given the events of 2020 and all of the effort that went into instigating change.  Montgomery County law enforcement clearly recognized the issue and took steps toward initiating change, such as passing bills to increase police accountability, but in order for change to happen said changes need to be practiced.  Future research should be done to investigate whether any change toward a non-discriminatory law enforcement system has been implemented throughout the country.
+                &emsp;&emsp;  
+                Despite implementing new laws and practices aimed at ending systemic racism in law enforcement, the Montgomery County Police has made little progress toward actually executing any kind of change. As illustrated by the data, there was a slight decrease in the amount of stops of Blacks and Hispanics, but not a large enough percentage to represent true change during the time period. Additionally, other categories, such as searches, increased for both the Black and Hispanic population. This is disappointing to see given the events of 2020 and all of the effort that went into instigating change. Montgomery County law enforcement clearly recognized the issue and took steps toward initiating change, such as passing bills to increase police accountability, but in order for change to happen said changes need to be practiced. Future research should be done to investigate whether any change toward a non-discriminatory law enforcement system has been implemented throughout the country.
             </p>
-            <h2>Data Critique</h2>
-            <p>
-                The Traffic Violations Open Data Portal from Montgomery County, Mayland contains traffic violation information from all electronic traffic violations issued in the county from January 1st, 2012 to March 1st, 2022 (as of today).  The data set is owned by MCG ESB Service and is updated daily.  The data set is organized in a table with columns representing categories, and rows representing each recorded traffic violation.  The categories are date, time, agency, sub-agency, description, location, latitude, longitude, accident, belts(seat belt on or off), injury, damage, fatal, alcohol, hazmat, search outcome, state, vehicle info, violation type, gender, race, etc.  The data set is of high quality, well organized, and a reliable source of information, making it easy to understand and interpret.  There are a lot of different categories to describe and analyze for each traffic stop, and the majority of this information is consistent across all the 1.77+ million recorded traffic stops.  The design of the dataset makes it easily sortable too. Using Tableau, we plan on sorting the data first by race or gender, and then by other categories such as warnings, tickets, searches, arrests, etc. to search for trends in the discriminatin of people of color and gender over the years. We will make two visualizations for each combination of categories, one from pre 2020 and another from post 2020 to see if the laws that were implemented by Montgomery County to prevent disrimination were upheld by police officers.  We can then take this information and visualize it within Tableau to further our analysis.  The dataset includes everything we need to give a thoughtful analysis, however, it is missing information such as the age of the violator, and the age, race, and gender of the officer, that would help to deepen our analysis even further.
-            </p>
+            <p><i>images below will be a single visualization</i></p>
+            <img src="images/img13.png" style="width:25%; height: auto;" alt="img-13">
+            <img src="images/img14.png" style="width:25%; height: auto;" alt="img-14">
+            
             <!--Rename imgages to reflect their content-->
             <!--Remove unnecessary images and/or turn them into visuals-->
             <!--Images one through nine are from 2019 to reflect the census year--->
             <!--Images 10 through 22 are from March 2019 to March 2020(BEFORE MARCH) or March 2020 to March 2021(AFTER MARCH)-->
-            <h2>Statistics & Visualisations</h2>
+            <h2 id="Visualisations">Additional Statistics & Visualisations</h2>
             <img src="images/img1.png" alt="img-1">
             <img src="images/img2.png" alt="img-2">
             <img src="images/img3.png" alt="img-3">
             <img src="images/img4.png" alt="img-4">
             <img src="images/img5.png" alt="img-5">
-            <img src="images/img6.png" alt="img-6">
             <img src="images/img7.png" alt="img-7">
             <img src="images/img8.png" alt="img-8">
-            <img src="images/img9.png" alt="img-9">
-            <img src="images/img10.png" alt="img-10">
             <img src="images/img11.png" alt="img-11">
             <img src="images/img12.png" alt="img-12">
-            <img src="images/img13.png" alt="img-13">
-            <img src="images/img14.png" alt="img-14">
             <img src="images/img15.png" alt="img-15">
             <img src="images/img16.png" alt="img-16">
             <img src="images/img17.png" alt="img-17">
@@ -82,9 +124,10 @@
             <img src="images/img22.png" alt="img-22">
         </main>
         <footer>
-            <i><small>
-                CS102 Project<br>
-            </small></i>
+            <small>
+                CS105 Final Project &copy; 2022
+                Joshua Hughes, Audrey Zinn, Ellie Lewis, Matthew Farnam
+            </small>
         </footer>
     </body>
 </html>
