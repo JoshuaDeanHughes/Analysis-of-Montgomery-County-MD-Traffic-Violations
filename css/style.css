@@ -4,24 +4,30 @@
 * {
     box-sizing: border-box;
 }
+header {
+    padding-top:15px;
+    padding-bottom: 15px;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, white, #66ccff);
+}
 nav {
     clear: both;
     text-align: center;
-    margin-top: 3rem;
+    background-color: #064579;
 }
 nav a {
     display: inline-block;
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 25px;
+    padding-left: 25px;
     transition: .5s;
     text-decoration: none;
-    color: #2196F3;
+    color: #fff;
     font-weight: bold;
 }
 nav a:hover{
-    color: #064579;
+    color: #a7ceee;
 }
 nav ul {
     list-style-type: none;
@@ -30,6 +36,15 @@ nav ul {
 }
 nav li {
     display: inline;
+}
+.banner {
+    height: 20vh;
+    text-align: center;
+    background-image: url(../images/Rockville\ MD.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 -1270px;
+    background-size: 100% auto;
+    border-bottom: 10px solid #064579;
 }
 .sidenav {
     float: left;
@@ -41,7 +56,7 @@ nav li {
     background: #eee;
     overflow-x: hidden;
     padding: 8px 0;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 }
 .sidenav a {
     padding: 6px 8px 6px 16px;
@@ -59,27 +74,28 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
 }
-#logo {
-    z-index: -1;
-    float: left;
-    height: 100px;
-    width: 100px;
-}
-header {
-    margin-left: 75px;
+.background {
+    background-image: url(../images/Rockville\ MD.jpg);
+    background-repeat: repeat;
+    background-size: 100% auto;
 }
 h1 {
-    float: left;
-    margin-top: 2rem;
-    padding-left: 10px;
     font-size: 30px;
 }
 h2 {
+    text-align: center;
     margin-top: 2rem;
+    border-bottom: 2px solid #064579;
+}
+h3 {
+    text-align: center;
+    font-size: 16px;
 }
 main {
-    width: 80%;
+    width: 75%;
     margin: 40px auto;
+    background-color: #fff;
+    padding: 10px 50px 20px 50px;
 }
 ul {
     list-style-type: disc;
